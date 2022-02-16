@@ -1,0 +1,148 @@
+/* Указываем box sizing */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+a{
+    font-family: Montserrat;
+    font-style: normal;
+    margin: 0 12px 0 0;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color:white;
+}
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.header{
+    display: flex;
+    background: #67AEFC;
+    width: 100%;
+}
+.mainH{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 18px auto;
+}
+.main{
+    margin-top: 82px;
+}
+.order{
+    width: 170px;
+    height: 37.78px;
+    background: #75E169;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+.maintext{
+width: 39%;
+height: 189px;
+margin-left: 300px;
+}
+.maintext h1{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 900;
+font-size: 50px;
+color: #484848;
+
+}
+.maintext p{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+color: #000000;
+margin: 20px 0 0 0;
+}
+.maintext button{
+width: 270px;
+height: 60px;
+border: none;
+margin: 52px 0 0 0;
+background: #75E169;
+border-radius: 5px;
+color: white;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+}

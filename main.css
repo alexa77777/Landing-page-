@@ -146,33 +146,28 @@ font-style: normal;
 font-weight: bold;
 font-size: 15px;
 }
-.sec{
-  background: #DAECFF;
+.services {
+  width: 65%;
+  margin: auto;
+  padding: .3rem;
+  background-color: #eee;
+  font: 1rem 'Fira Sans', sans-serif;
 }
-.sec select{
-    display: grid;
-    border-radius: 15px;
-    border: none;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    align-items: center;
-    width: 70%;
-    margin: 10px auto;
-    height: 61px;
-    appearance: none;
-    overflow: hidden;
-    background-size: 10px; 
+.option> h1,
+.services {
+  padding: .3rem;
+  font-size: 1.2rem;
 }
-.sec select::after{
-    content: "";
-    background-image: url('angleDown.svg');
+
+.option {
+  background: right/contain content-box border-box no-repeat
+      url('/media/examples/rain.svg') white;
 }
-.sec h1{
-    font-family: Montserrat;
-font-style: normal;
-font-weight: 800;
-font-size: 32px;
-text-align: center;
+li > article{
+  display: none;
+}
+.option > h2,
+.option > p {
+  margin: .2rem;
+  font-size: 1rem;
 }

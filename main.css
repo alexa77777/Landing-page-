@@ -1,7 +1,5 @@
 /* Указываем box sizing */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-*,
-*::before,
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');*::before,
 *::after {
   box-sizing: border-box;
 }
@@ -37,19 +35,12 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
-
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 a{
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     margin: 0 12px 0 0;
     font-weight: 600;
@@ -85,7 +76,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.header{
+.mainHead{
     display: flex;
     background: #67AEFC;
     width: 100%;
@@ -107,7 +98,7 @@ select {
     border-radius: 5px;
     border: none;
     color: white;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -118,7 +109,7 @@ height: 189px;
 margin-left: 300px; 
 }
 .maintext h1{
-    font-family: Montserrat;
+    font-family: 'Montserrat';
 font-style: normal;
 font-weight: 900;
 font-size: 50px;
@@ -126,7 +117,7 @@ color: #484848;
 
 }
 .maintext p{
-    font-family: Montserrat;
+    font-family: 'Montserrat';
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
@@ -141,16 +132,19 @@ margin: 52px 0 0 0;
 background: #75E169;
 border-radius: 5px;
 color: white;
-font-family: Montserrat;
+font-family: 'Montserrat';
 font-style: normal;
 font-weight: bold;
 font-size: 15px;
+}
+.sec{
+  background-color:#DAECFF;
+  padding-bottom: 45px;
 }
 .services {
   width: 65%;
   margin: auto;
   padding: .3rem;
-  background-color: #eee;
   font: 1rem 'Fira Sans', sans-serif;
 }
 .option> h1,
@@ -158,10 +152,18 @@ font-size: 15px;
   padding: .3rem;
   font-size: 1.2rem;
 }
-
-.option {
-  background: right/contain content-box border-box no-repeat
-      url('/media/examples/rain.svg') white;
+li{
+  padding: 14px;
+  background: #fff;
+  border-radius: 15px;
+  font-family: 'Montserrat';
+  font-weight:400;
+  font-size: 18px;
+}
+.sec > h1{
+  padding: 120px 0 55px 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 li > article{
   display: none;
@@ -170,4 +172,74 @@ li > article{
 .option > p {
   margin: .2rem;
   font-size: 1rem;
+}
+.markedList{
+  
+  display: grid;
+  grid-gap: 10px;
+  list-style-image: url('img/Ellipse4.svg');
+}
+.markedList > img {
+  position: absolute;
+  right: 3%;
+  top: 360%;
+}
+.kysochekEbychegoSlidera{
+  padding: 33px;
+  display: inline-flex;
+  border: 2px solid #67AEFC;
+  border-radius: 15px;
+  min-width: 0;
+}
+.textEbychegoSlidera{
+  width: 300px;
+  margin: auto;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 140%;
+color: #000000;
+}
+.ebychiySlider{
+  margin: 30px;
+}
+.example{
+display: inline-flex;
+}
+.pictureExample{
+  width: 569.03px;
+height: 447px;
+}
+.cards{
+  background-color:#DAECFF;
+}
+.cards > h1{
+  text-align: center;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+width: 509px;
+padding: 121px 0px 25px 0px;
+margin: auto;
+}
+.moreinfoText > h1{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 125%;
+}
+.moreinfoText > p{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 140%;
+}
+.moreinfo{
+  display: inline-flex;
+}
+.moreinfoText{
+  width: 47%;
 }
